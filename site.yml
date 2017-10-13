@@ -3,7 +3,9 @@
   hosts: 
   remote_user: centos
   become: true
- 
-  yum:
-    name: wget
-    state: latest
+  
+  tasks:
+  - name: install wget 
+    yum:
+      name: wget
+      state: latest
