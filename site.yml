@@ -1,0 +1,9 @@
+---
+- name: Vault Testing
+  hosts: 
+  remote_user: centos
+  become: true
+ 
+  yum:
+    name: wget
+    state: latest
